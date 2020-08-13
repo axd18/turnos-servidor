@@ -1,0 +1,24 @@
+{
+  "name": "turnos-servidor",
+  "version": "1.0.0",
+  "description": "API para Turnos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/axd18/turnos-servidor.git"
+  },
+  "author": "Adrián Fernández",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.29"
+  }
+}
