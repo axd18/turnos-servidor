@@ -7,7 +7,7 @@ const auth = require('../middleware/auth');
 
 // Iniciar sesión
 // api/auth
-router.post('/',
+router.post('/', 
     authController.autenticarUsuario
 );
 
