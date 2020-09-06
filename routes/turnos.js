@@ -9,9 +9,9 @@ const { check } = require('express-validator');
 // api/turnos
 router.post('/', 
     auth,
-    [
-        check('nombre', 'El nombre del proyecto es obligatoio').not().isEmpty()
-    ],
+    // [
+    //     check('nombre', 'El nombre del proyecto es obligatoio').not().isEmpty()
+    // ],
     turnoController.crearTurno
 );
 

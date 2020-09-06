@@ -1,15 +1,14 @@
 const Turno = require('../models/Turno');
 const { validationResult } = require('express-validator');
 
-exports.crearProyecto = async (req, res) => {
+exports.crearTurno = async (req, res) => {
 
     // Revisar si hay errores
     const errores = validationResult(req);
     if( !errores.isEmpty() ) {
         return res.status(400).json({errores: errores.array() })
     }
-
-
+    
     try {
         // Crear un nuevo turno
         const turno = new Turno(req.body);
@@ -17,7 +16,7 @@ exports.crearProyecto = async (req, res) => {
         // Guardar el creador via JWT
         turno.creador = req.usuario.id;
 
-        // guardamos el proyecto
+        // guardamos el turno
         turno.save();
         res.json(turno);
         
