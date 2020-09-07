@@ -16,6 +16,9 @@ const TurnoSchema = mongoose.Schema({
         required: true,
         trim: true
     },
+    datepicker: {
+        type: String
+    },
     creador: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario'

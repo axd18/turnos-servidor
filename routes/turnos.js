@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const turnoController = require('../controllers/turnoController');
 const auth = require('../middleware/auth');
-const { check } = require('express-validator');
 
 
 // Crea turnos
