@@ -26,7 +26,7 @@ exports.crearTurno = async (req, res) => {
     }
 }
 
-// Obtiene todos los proyectos del usuario actual
+// Obtiene todos los turnos del usuario actual
 exports.obtenerTurnos = async (req, res) => {
     try {
         const turnos = await Turno.find({ creador: req.usuario.id }).sort({ creado: -1 });
